@@ -1,0 +1,19 @@
+﻿  game.cpp
+D:\College\code\3d\game\game\game.cpp(231,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\College\code\3d\game\game\game.cpp(290,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\College\code\3d\game\game\game.cpp(376,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\College\code\3d\game\game\game.cpp(381,25): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\College\code\3d\game\game\game.cpp(437,32): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned int
+          ]
+D:\College\code\3d\game\game\game.cpp(438,36): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
+          with
+          [
+              _Ty=unsigned int
+          ]
+D:\College\code\3d\game\game\game.cpp(472,68): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+D:\College\code\3d\game\game\game.cpp(648,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+glew32sd.lib(glew.obj) : warning LNK4099: 未找到 PDB“glew_static.pdb”(使用“glew32sd.lib(glew.obj)”或在“D:\College\code\3d\game\x64\Debug\glew_static.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  game.vcxproj -> D:\College\code\3d\game\x64\Debug\game.exe
