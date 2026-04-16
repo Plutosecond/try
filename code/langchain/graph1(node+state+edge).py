@@ -66,4 +66,6 @@ initial_state = {"u1": 10, "u2": 20}
 
 result = graph.invoke(initial_state, config=config)
 
-print(result)##最后返回的是output状态如果没有指明就是全部状态
+print(result)
+##invoke最后返回的是output状态如果没有指明就是全部状态
+##stream最后返回的是图中调用的所有llm的返回结果的content，chunk分为msg_chunk和metadata

@@ -74,7 +74,7 @@ while True:
     # print(result)
     result=graph.stream({"user_in":user_in},config=graph_config,stream_mode="messages")
     for chunk,metadata in result:
-        if metadata['langgraph_node'] == 'agent' and chunk.content:  ##只输出aimessage
+        if metadata['langgraph_node'] != 'tools' and chunk.content:  ##只输出aimessage
             print(chunk.content, end="", flush=True)
         # print(metadata,end="")
     print()
