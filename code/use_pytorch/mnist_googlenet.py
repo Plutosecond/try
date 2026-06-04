@@ -58,13 +58,13 @@ class Net(torch.nn.Module):
         self.mp=torch.nn.MaxPool2d(2)
         self.fc=torch.nn.Linear(1408,10)
 
-    def forward(self,x):
+    def forward(self,x):#b,c,w,h
         in_size=x.size(0)
         x=F.relu(self.mp(self.conv1(x)))
         x=self.incep1(x)
         x=F.relu(self.mp(self.conv2(x)))
         x=self.incep2(x)
-        x=x.view(in_size,-1)
+        x=x.view(in_size,-1)##(in_size,1408)
         x=self.fc(x)
         return x
 
